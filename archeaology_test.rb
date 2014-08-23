@@ -6,10 +6,6 @@ class TestArchaeology < MiniTest::Test
     @arch = Archaeology.new
   end
 
-  def test_that_empty_arr_returns_an_empty_array
-    assert_equal [], @arch.empty_arr
-  end
-
   def test_if_function_method_is_sent_a_range_it_returns_an_empty_array
     assert_equal [], @arch.function(1..9)
   end
@@ -28,5 +24,9 @@ class TestArchaeology < MiniTest::Test
 
   def test_if_function_method_is_sent_an_array_with_nil_values_it_returns_an_empty_array
     assert_equal [], @arch.function(["henry", nil, 0])
+  end
+
+  def test_that_empty_arr_returns_an_empty_array
+    assert_equal [], @arch.empty_arr
   end
 end
