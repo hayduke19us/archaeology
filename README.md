@@ -8,7 +8,7 @@ end
 This method takes a collection as an argument and returns an empty array. Following is an explanation of what each of the chained methods do.
 
 ##### Inject
-The `inject` method's argument is an accumulator and its block has two block paramaters. The first, 'a', is the empty hash from the method argument. The second parameter, 'b', iterates over the collection. inject's block populates the empty hash or 'accumulator' with keys and values.
+The `inject` method's argument is an accumulator and its block has two block paramaters. The first, 'a', is the empty hash from the method argument. The second parameter, 'b', iterates over the collection. Inject's block populates the empty hash or 'accumulator' with keys and values.
 
 The keys and values come from the iterated collection. However, the a[b] or Hash[key] method is trying to create a new key/value pair with a value belonging to the key currerntly being created. That value has not been defined yet and has a value of nil. This is where the `function` method is a bit cheeky.
 
