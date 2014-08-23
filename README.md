@@ -2,7 +2,7 @@
 
 ```ruby
 def function(a)
-a.inject({}){ |a,b| a[b] = a[b].to_i + 1; a}.reject{ |a,b| b == 1 }.keys
+  a.inject({}){ |a,b| a[b] = a[b].to_i + 1; a}.reject{ |a,b| b == 1 }.keys
 end
 ```
 This method takes a collection as an argument and returns an empty array. Following is an explanation of what each of the chained methods do.
